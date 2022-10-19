@@ -1,4 +1,4 @@
-# Image Caption Summerizer 
+# Image Caption Summarizer 
 	Deliverable of UTS 32933 Research Project Autumn 2022
 	Supervisor: Dr. Wei Liu
 
