@@ -10,7 +10,7 @@ Original file is located at
 """
 
 #@title install packages
-!pip install transformers
+pip install transformers
 !pip install transformers[sentencepiece]
 !pip install -U sentence-transformers
 !pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
