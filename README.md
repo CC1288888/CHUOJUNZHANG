@@ -1,1 +1,1 @@
-# Caption Summerizer
+# Image Caption Summerizer
