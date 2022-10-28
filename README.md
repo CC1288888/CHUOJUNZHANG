@@ -19,10 +19,16 @@
 The model is coded using Hugging Face transformer and python.
 You can set up your environment following the instructions from this link:
 https://huggingface.co/docs/transformers/installation. 
-The demo notebook uses PyTorch library
+
+What you can find from the link:
+1. Steps to instal virtual enviroment 
+2. Paths to instal transformer using different library: Tensorflow, Pytorch, Flax
+3. Steps to set up with Conda
+4. Steps to use models offline
+
+The demo notebook uses PyTorch library and run on Colab
 ### Limitations
 - The notebooks contained several transformer models, it will take some time to download the models at the first time 
-
 - The Summarizer uses Pipeline Function of Hugging Face, the input length is set by the base model and cannot be changed.
 If the input image dataset is too large, the model will disfunction.To solve this problem, you can manipulate parameter "length" under function "get_image_caption_summary" to adjust the input size. 
 
