@@ -42,21 +42,29 @@ If the input image dataset is too large, the model will disfunction.To solve thi
 - The default model of text summarization is set as "facebook/bart-large-xsum". You can change it to "facebook/bart-large-cnn" or other text    summarization models under this link: https://huggingface.co/models?pipeline_tag=summarization&sort=downloads
 - Experiement results showed that "facebook/bart-large-xsum" and "facebook/bart-large-cnn" can get the summary that meet the scenarios' needs
 - [get_image_caption_summary (path,ICM,TSM,length)] is the function that convert image set into summary.
-   - path: directory of your image dataset
-   
-   - ICM: image caption model weight: "COCO","CO"
-   
-   - TSM: Text summarization model:"facebook/bart-large-xsum" or "facebook/bart-large-cnn"
-   
+   - path: directory of your image dataset   
+   - ICM: image caption model weight: "COCO","CO"  
+   - TSM: Text summarization model:"facebook/bart-large-xsum" or "facebook/bart-large-cnn" 
    - length:the paramenter that controls the number of sentences used to extract the paraphrased summary.
 Note: Point 2--"COCO"-Coco dataset; "CO"-Conceptual dataset.
 
 ## Experiment Results
+![5](https://user-images.githubusercontent.com/104782412/198565696-1c5ebfb6-254d-4e07-b208-b8b7615fbd04.jpg)
 
 ## Demo
 ### Testing Dataset
 It contains 30 images of raining day, sample select from Dataset:Rain 
 ![3](https://user-images.githubusercontent.com/104782412/198552028-754be5d4-c224-4d81-a47e-623572fd5180.jpg)
 ### Implementation
+Demo is implemented on Colab
 
+- First: Upload the notebook to Google Drive
+- Second: Run the notebook on Colab
+- Third: Mount Google Drive to assess your dataset
+- Fouth: cd your directory as the example cd '/content/drive/MyDrive/dataset test/raintest'
+- Fifth: set your path as the example: dir="/content/drive/MyDrive/dataset test/raintest"
+- Sixth: use <get_image_caption_summary> to convert image to text as the example: txt=get_image_caption_summary(dir,"CO",None,2)
 
+Note: <get_image_caption_summary> refers to "About the Model"
+### Demo Result
+[{'summary_text': 'A selection of photographs from around the world showing the effects of torrential rain on people and animals.'}]
