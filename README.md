@@ -79,4 +79,4 @@ Note:
 ### Demo Result
 [{'summary_text': 'A selection of photographs from around the world showing the effects of torrential rain on people and animals.'}]
 ## Future Work
-The result with "facebook/bart-large-cnn" can address the scenario 2 well. But for scenario 1, the output from "facebook/bart-large-xsum" is too simple and lack of variety. To enrich the caption, making it more interesting and vivid, this model can be modified by text generator that trained on various writting style, e.g., the story generator.  
+The result with "facebook/bart-large-cnn" can address the scenario 2 well. But for scenario 1, the output from "facebook/bart-large-xsum" is too simple and lack of variety. To enrich the caption, making it more interesting and vivid, this model can be modified by text generator trained on various writting style, e.g., the story generator.  
