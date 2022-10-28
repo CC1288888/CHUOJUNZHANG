@@ -11,8 +11,9 @@ The summary can compose one or several sentences according to model applied.
 It is designed for two scenarios while people posting images online:
 1. People post a story on social media with similar type of image e.g., image of the same scene
    but don't know what to write
-2. People browse other social media accounts which contains various images, but want a quick 
+2. People browse other social media accounts which contains various images,and they want a quick 
    understanding of what inside their albums. 
+   
 It works like this（￣︶￣）↓↓
 
 ![2](https://user-images.githubusercontent.com/104782412/198533437-02741833-a6e7-4fa2-bc57-e15243b0b3d8.jpg)
@@ -46,6 +47,7 @@ If the input image dataset is too large, the model will disfunction.To solve thi
    - ICM: image caption model weight: "COCO","CO"  
    - TSM: Text summarization model:"facebook/bart-large-xsum" or "facebook/bart-large-cnn" 
    - length:the paramenter that controls the number of sentences used to extract the paraphrased summary.
+
 Note: Point 2--"COCO"-Coco dataset; "CO"-Conceptual dataset.
 
 ## Experiment Results
