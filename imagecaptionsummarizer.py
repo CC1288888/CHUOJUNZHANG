@@ -9,12 +9,6 @@ Original file is located at
 ## Installation & Loading Packages
 """
 
-#@title install packages
-!pip install transformers
-!pip install transformers[sentencepiece]
-!pip install -U sentence-transformers
-#!pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
-
 #@title Import Packages-Summarizer
 
 import warnings
@@ -29,9 +23,6 @@ import cv2
 from os import listdir
 import sys
 #from pynvml import *
-
-#@title Image Caption Model Installment
-! pip install git+https://github.com/openai/CLIP.git
 
 #@title Define Functions for Generator
 import os
@@ -398,22 +389,6 @@ def get_image_caption_summary (path,ICM,TSM,length):
     summary=summarizer(paraptext, max_length=130, min_length=10, do_sample=True)
   return summary
 
-"""## Test"""
-
-from google.colab import drive
-drive.mount('/content/drive')
-
-cd '/content/drive/MyDrive/dataset test/raintest'
-
-dir="/content/drive/MyDrive/dataset test/raintest"
-
-#Summarizer Model:"facebook/bart-large-xsum" / "knkarthick/MEETING_SUMMARY" / "google/pegasus-xsum"
-#Image Cap Model: "COCO" or "CO" -anything will trigger Conceptual 
-
-loc="facebook/bart-large-cnn"
-
-txt3=get_image_caption_summary(dir,"CO",None,2)
-txt3
 
 """## Reference
 
