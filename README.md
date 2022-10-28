@@ -4,4 +4,7 @@
 	Author: CHUOJUN ZHANG
 
 # What is it
-       This is a prototype,called Image Caption Summarizer, that can generate abstractive summary for an image set. 
+       This is a prototype that can generate abstractive summary for an image set. 
+![1](https://user-images.githubusercontent.com/104782412/198530590-287ddf04-35d5-40dc-8c69-26c6545f4a7d.jpg)
+
+
