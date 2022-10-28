@@ -28,10 +28,16 @@ What you can find from the link:
 
 The demo notebook uses PyTorch library and run on Colab
 ### Limitations
-- The notebooks contained several transformer models, it will take some time to download the models at the first time 
+- The notebook contains several transformer models, it will take some time to download the models at the first time 
 - The Summarizer uses Pipeline Function of Hugging Face, the input length is set by the base model and cannot be changed.
 If the input image dataset is too large, the model will disfunction.To solve this problem, you can manipulate parameter "length" under function "get_image_caption_summary" to adjust the input size. 
 
 Note: "Length" controls the number of sentences used to extract the paraphrased summary.
 
+# How to use
+ As no interface was set up for the model, you can simply test it on Colab or Jupyter with your own dataset.
+ 
+ Note: if you use it on Jupyter, please refer to "Install with conda" from the above link to set up the transformer
 
+## Demo
+### Testing Dataset
