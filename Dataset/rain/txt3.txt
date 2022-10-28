@@ -1,0 +1,13 @@
+['a person carrying a bucket of water next to a bike',
+ 'people walking in the rain with umbrellas',
+ 'people walking down a street with umbrellas',
+ 'a woman walking down a street holding an umbrella',
+ 'a woman walking down a street holding an umbrella',
+ 'a fire hydrant in the middle of a grassy field',
+ 'a green forest filled with lots of green plants',
+ 'a plant that is growing out of a tree',
+ 'a river filled with lots of green plants and trees',
+ 'a green plant growing in the middle of a field',
+ 'a blurry photo of a sunset with a body of water',
+ 'a forest filled with lots of snow and trees',
+ 'a green fire hydrant in the middle of a lush green forest']
