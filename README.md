@@ -73,6 +73,8 @@ Demo is implemented on Colab
 
 ![6](https://user-images.githubusercontent.com/104782412/198609030-57b2a2a3-54be-44b1-9e97-205d2df8daaf.jpg)
 
-Note: <get_image_caption_summary> setting refers to "About the Model"
+Note: 
+- <get_image_caption_summary> setting refers to "About the Model"
+- If your dataset is large, it suggests to set a bigger number on "Length" to concatenate the text
 ### Demo Result
 [{'summary_text': 'A selection of photographs from around the world showing the effects of torrential rain on people and animals.'}]
