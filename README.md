@@ -6,14 +6,15 @@
 	Author: CHUOJUN ZHANG
 
 ## What is it
-       This prototype can generate abstractive summary for an image set.
-       The summary can compose one or several sentences according to model applied.
-       It is designed for two scenarios while people posting images online:
-       1. People post a story on social media with similar type of image e.g., image of the same scene
-          but don't know what to write
-       2. People browse other social media accounts which contains various images, but want a quick understanding
-          of what inside their albums. 
-	It works like this（￣︶￣）↓↓
+This prototype can generate abstractive summary for an image set.
+The summary can compose one or several sentences according to model applied.
+It is designed for two scenarios while people posting images online:
+1. People post a story on social media with similar type of image e.g., image of the same scene
+   but don't know what to write
+2. People browse other social media accounts which contains various images, but want a quick 
+   understanding of what inside their albums. 
+It works like this（￣︶￣）↓↓
+
 ![2](https://user-images.githubusercontent.com/104782412/198533437-02741833-a6e7-4fa2-bc57-e15243b0b3d8.jpg)
 ## Prerequisites
 The model is coded using Hugging Face transformer and python.
@@ -40,7 +41,6 @@ If the input image dataset is too large, the model will disfunction.To solve thi
 - The CLIP and GPT2 is weighted on COCO dataset or Conceptual dataset. You can choose the weight by inputting "COCO" or "CO" into "ICM", 
   a parameter under function "get_image_caption_summary" to change the model weighting. 
 - The default model of text summarization is set as "facebook/bart-large-xsum". You can change it to "facebook/bart-large-cnn" or other text    summarization models under this link: https://huggingface.co/models?pipeline_tag=summarization&sort=downloads
-- Experiement results showed that "facebook/bart-large-xsum" and "facebook/bart-large-cnn" can get the summary that meet the scenarios' needs
 - [get_image_caption_summary (path,ICM,TSM,length)] is the function that convert image set into summary.
    - path: directory of your image dataset   
    - ICM: image caption model weight: "COCO","CO"  
@@ -49,7 +49,11 @@ If the input image dataset is too large, the model will disfunction.To solve thi
 Note: Point 2--"COCO"-Coco dataset; "CO"-Conceptual dataset.
 
 ## Experiment Results
-![5](https://user-images.githubusercontent.com/104782412/198565696-1c5ebfb6-254d-4e07-b208-b8b7615fbd04.jpg)
+- "facebook/bart-large-xsum" summary can address Scenario 1
+- "facebook/bart-large-cnn" summary can address Scenario 2
+
+  
+![5](https://user-images.githubusercontent.com/104782412/198614070-45cecfdc-ee00-49bb-98b8-e64784660663.jpg)
 
 ## Demo
 ### Testing Dataset
@@ -65,6 +69,8 @@ Demo is implemented on Colab
 - Fifth: set your path as the example: dir="/content/drive/MyDrive/dataset test/raintest"
 - Sixth: use <get_image_caption_summary> to convert image to text as the example: txt=get_image_caption_summary(dir,"CO",None,2)
 
-Note: <get_image_caption_summary> refers to "About the Model"
+![6](https://user-images.githubusercontent.com/104782412/198609030-57b2a2a3-54be-44b1-9e97-205d2df8daaf.jpg)
+
+Note: <get_image_caption_summary> setting refers to "About the Model"
 ### Demo Result
 [{'summary_text': 'A selection of photographs from around the world showing the effects of torrential rain on people and animals.'}]
